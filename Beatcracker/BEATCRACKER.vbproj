@@ -1,0 +1,580 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2E1BC811-8E8C-4E44-85FF-E884C44FFD6A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Beatcracker.My.MyApplication</StartupObject>
+    <RootNamespace>Beatcracker</RootNamespace>
+    <AssemblyName>Beatcracker</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>1</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+    <Optimize>true</Optimize>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>full</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>1</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>back_96px.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.1.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.1.4\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="artists.Designer.vb">
+      <DependentUpon>artists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="artists.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BCUpload.Designer.vb">
+      <DependentUpon>BCUpload.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BCUpload.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContPan.Designer.vb">
+      <DependentUpon>ContPan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ContPan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.vb">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="download.Designer.vb">
+      <DependentUpon>download.vb</DependentUpon>
+    </Compile>
+    <Compile Include="download.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginClass.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Updater.Designer.vb">
+      <DependentUpon>Updater.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Updater.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BCUpload.resx">
+      <DependentUpon>BCUpload.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContPan.resx">
+      <DependentUpon>ContPan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="download.resx">
+      <DependentUpon>download.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Updater.resx">
+      <DependentUpon>Updater.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\download_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online_support_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkmark_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkmark_52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule_128px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud_alert_128px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkmark_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud_link_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud_link_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkmark_32px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkmark_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiply_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiply_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkmark_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formation-finale-kontakt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar_chart_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar_chart_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar_chart_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar_chart_b30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar_chart_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar_chart_30bpx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right_arrow_30gpx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right_arrow_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar_chart_30bpx1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right_30bpx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winrar_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winrar_30bpx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grand_piano_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grand_piano_30bpx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fingerprint_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fingerprint_30gpx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slide_up_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down_button_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instagram_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twitter_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instagram_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="back_96px.ico" />
+    <None Include="Resources\privacy_52px.png" />
+    <None Include="Resources\male_user_48px.png" />
+    <None Include="Resources\user_48px.png" />
+    <None Include="Resources\soonvibesb_100px.png" />
+    <None Include="Resources\DK.png" />
+    <None Include="Resources\verified_account_60px.png" />
+    <None Include="Resources\soonvibes_100px.png" />
+    <None Include="Resources\checkmark_488px.png" />
+    <None Include="Resources\7zip_52px.png" />
+    <None Include="Resources\zip_52px.png" />
+    <None Include="Resources\rar_52px.png" />
+    <None Include="Resources\box_important_48px1.png" />
+    <None Include="Resources\cancel_48px1.png" />
+    <None Include="Resources\cancel_48px.png" />
+    <None Include="Resources\sad_cloud_48px.png" />
+    <None Include="Resources\box_important_48px.png" />
+    <None Include="Resources\upload.png" />
+    <None Include="Resources\folder_48px.png" />
+    <None Include="Resources\membership_card_100px.png" />
+    <None Include="Resources\avatars-zt8k5d4RJJqVJLVw-W6PjIA-t500x500.jpg" />
+    <None Include="Resources\christmas_star_96px.png" />
+    <None Include="Resources\avatars-000710983876-1rsewi-t500x500.jpg" />
+    <None Include="Resources\maximize_button_64px.png" />
+    <None Include="Resources\dfryedt3.png" />
+    <None Include="Resources\shopb_60px.png" />
+    <None Include="Resources\sonometerb_100px.png" />
+    <None Include="Resources\download_from_the_cloudb_60px.png" />
+    <None Include="Resources\upload_to_cloudb_100px.png" />
+    <None Include="Resources\shop_60px.png" />
+    <None Include="Resources\sonometer_100px.png" />
+    <None Include="Resources\download_from_the_cloud_60px.png" />
+    <None Include="Resources\upload_to_cloud_100px.png" />
+    <None Include="Resources\homeb_60px.png" />
+    <None Include="Resources\home_60px.png" />
+    <None Include="Resources\BUSINESS_STILL.png" />
+    <None Include="Resources\BUSINESS_ANIMATED.gif" />
+    <None Include="Resources\dfryedt.png" />
+    <None Include="Resources\Sans titre-12.png" />
+    <None Include="Resources\Sans titre-11.png" />
+    <None Include="Resources\Sans titre-1.png" />
+    <None Include="Resources\cat_profile_60px2.png" />
+    <None Include="Resources\cat_profile_60px1.png" />
+    <None Include="Resources\cat_profile_60px.png" />
+    <None Include="Resources\Screenshot_82.png" />
+    <None Include="Resources\delete_64px1.png" />
+    <None Include="Resources\new.png" />
+    <None Include="Resources\Screenshot_1.png" />
+    <None Include="Resources\maximize_button_52px.png" />
+    <None Include="Resources\play_button_circled_96px1.png" />
+    <None Include="Resources\Screenshot_8.png" />
+    <None Include="Resources\downloading_updates_48px.png" />
+    <None Include="Resources\ok_48px.png" />
+    <None Include="Resources\verified_account_48px.png" />
+    <None Include="Resources\file_48px.png" />
+    <None Include="Resources\upload_60px.png" />
+    <None Include="Resources\right_arrohw_64px.png" />
+    <None Include="Resources\right_arrow_64px.png" />
+    <None Include="Resources\grand_piano_50px.png" />
+    <None Include="Resources\winrfar_48px.png" />
+    <None Include="Resources\winrar_48px.png" />
+    <None Include="Resources\sell_stock_48px.png" />
+    <None Include="Resources\sell_stock_p48px.png" />
+    <None Include="Resources\norwind.png" />
+    <None Include="Resources\1.6.png" />
+    <None Include="Resources\Space UI.png" />
+    <None Include="Resources\eryetu.png" />
+    <None Include="Resources\zdrdr.png" />
+    <None Include="Resources\checkmark_32px2.png" />
+    <None Include="Resources\calendar_100px.png" />
+    <None Include="Resources\jhkjhk.png" />
+    <None Include="Resources\rect.png" />
+    <None Include="Resources\soundcloud_64px.png" />
+    <None Include="Resources\spotify_m100px.png" />
+    <None Include="Resources\spotify_100px.png" />
+    <None Include="Resources\Snapchat-223605080.jpg" />
+    <None Include="Resources\upload_127px2.png" />
+    <None Include="Resources\upload_32px1.png" />
+    <None Include="Resources\upload_127px1.png" />
+    <None Include="Resources\upload_to_cloud_127px.png" />
+    <None Include="Resources\upload_127px.png" />
+    <None Include="Resources\alarm_48px1.png" />
+    <None Include="Resources\alarm_48px.png" />
+    <None Include="Resources\back_125px.png" />
+    <None Include="Resources\settings_48px.png" />
+    <None Include="Resources\chevron_left_52px.png" />
+    <None Include="Resources\donate_52px.png" />
+    <None Include="Resources\membership_card_60px.png" />
+    <None Include="Resources\discord_48gpx.png" />
+    <None Include="Resources\settings_50px1.png" />
+    <None Include="Resources\multiply_60px.png" />
+    <None Include="Resources\expand_arroow_52px1.png" />
+    <None Include="Resources\expand_arroow_52px.png" />
+    <None Include="Resources\expand_arroww_48px.png" />
+    <None Include="Resources\menu_100px.png" />
+    <None Include="Resources\upload_32px.png" />
+    <None Include="Resources\add_50px.png" />
+    <None Include="Resources\add_100px.png" />
+    <None Include="Resources\checked_48px1.png" />
+    <None Include="Resources\protect_48px.png" />
+    <None Include="Resources\refresh_48px.png" />
+    <None Include="Resources\Mastercard_betaalmogelijkheid_in_casino.png" />
+    <None Include="Resources\visa_logo.png" />
+    <None Include="Resources\visa.png" />
+    <None Include="Resources\ppl1.jpg" />
+    <None Include="Resources\54729471_409870689578226_2052248894309400576_n-735x400.jpg" />
+    <None Include="Resources\globe_1.gif" />
+    <None Include="Resources\globe_still.png" />
+    <None Include="Resources\UFO_ANIMATED_500.gif" />
+    <None Include="Resources\UFO_STILL.png" />
+    <None Include="Resources\UIHere.png" />
+    <None Include="Resources\soundcloud_32px.png" />
+    <None Include="Resources\Multi_Color_Bar.gif" />
+    <None Include="Resources\hiclipart.com%281%29.png" />
+    <None Include="Resources\hiclipart.com.png" />
+    <None Include="Resources\loyalty_card_30px.png" />
+    <None Include="Resources\checkmark_60px1.png" />
+    <None Include="Resources\checked_b48px1.png" />
+    <None Include="Resources\checked_b48px.png" />
+    <None Include="Resources\new_60px.png" />
+    <None Include="Resources\rocket_128px.png" />
+    <None Include="Resources\wi-fi_64px.png" />
+    <None Include="Resources\asteroid_160px.png" />
+    <None Include="Resources\signal_48px.png" />
+    <None Include="Resources\launchpad_60px.png" />
+    <None Include="Resources\omphhat.png" />
+    <None Include="Resources\high_importance_b64px.png" />
+    <None Include="Resources\high_importance__64px.png" />
+    <None Include="Resources\bank_cards_50px.png" />
+    <None Include="Resources\bank_cards_w50px.png" />
+    <None Include="Resources\bank_cards_100px.png" />
+    <None Include="Resources\ljbvigvi.png" />
+    <None Include="Resources\important_mail_48px.png" />
+    <None Include="Resources\twitter_52px.png" />
+    <None Include="Resources\instagraam_64px.png" />
+    <None Include="Resources\back_96px.png" />
+    <None Include="Resources\Composition 11.gif" />
+    <None Include="Resources\1280px-Patreon_logo_with_wordmark.svg.png" />
+    <None Include="Resources\1280px-Tipeee_logo.svg.png" />
+    <None Include="Resources\utip.png" />
+    <None Include="Resources\ppl.png" />
+    <None Include="Resources\pp258.png" />
+    <None Include="Resources\ppl.jpg" />
+    <None Include="Resources\kisspng-paypal-logo-payment-business-sales-5af84e8589cb44.2359210415262224695644.jpg" />
+    <None Include="Resources\donateb_64px.png" />
+    <None Include="Resources\donate_64px.png" />
+    <None Include="Resources\Composition 1.gif" />
+    <None Include="Resources\norhwind.png" />
+    <None Include="Resources\maxhwind.png" />
+    <None Include="Resources\maxwind.png" />
+    <None Include="Resources\checkmark_48px.png" />
+    <None Include="Resources\error_48px1.png" />
+    <None Include="Resources\Sneaky-1280-W.png" />
+    <None Include="Resources\box-total-bundle.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\1572059674_xxxx.png" />
+    <None Include="Resources\xpand-2-box2.png" />
+    <None Include="Resources\logo-afbb1c7def15be1f3f104a967629854af7921f2544eb89d63f214a5eedbeed55.png" />
+    <None Include="Resources\158916_Wondershare.png" />
+    <None Include="Resources\omnisphere_logo.png" />
+    <None Include="Resources\unnamed.png" />
+    <None Include="Resources\high_importance_64px.png" />
+    <None Include="Resources\info_96px1.png" />
+    <None Include="Resources\checked_48px.png" />
+    <None Include="Resources\zip_64px.png" />
+    <None Include="Resources\download_48px.png" />
+    <None Include="Resources\fhg1.png" />
+    <None Include="Resources\fhg.png" />
+    <None Include="Resources\pseudo.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\Sans titre-2.png" />
+    <None Include="Resources\ffd.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+</Project>
